@@ -1,0 +1,47 @@
+.user_location {
+  height: 50px;
+  background-color: darken($grey, 4%);
+  color: $dark-grey;
+  box-shadow: inset 0 3px 3px 0px darken($grey, 15%);
+  @extend .flex;
+  i {
+    margin-right: 15px;
+  }
+  p {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include breakpoints(tablet) {
+    font-size: 1.3rem;
+  }
+  @include breakpoints(desktop) {
+    font-size: 1.5rem;
+  }
+}
+
+.call_to_action {
+  padding: 40px 25px 55px;
+  text-align: center;
+  h2 {
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: black;
+  }
+  p {
+    margin: auto;
+    margin-bottom: 30px;
+    font-weight: 300;
+    font-size: 1.1rem;
+  }
+
+  @include breakpoints(tablet) {
+    font-size: 1.5rem;
+  }
+  @include breakpoints(desktop) {
+    font-size: 2rem;
+  }
+}

@@ -4,6 +4,11 @@
 @import 'utils/bg-pictures';
 
 @import 'base/fonts';
+@import 'base/reset';
+@import 'base/global';
+
+@import 'components/buttons';
+@import 'pages/homepage';
 
 @import 'layouts/header';
 @import 'layouts/footer';
