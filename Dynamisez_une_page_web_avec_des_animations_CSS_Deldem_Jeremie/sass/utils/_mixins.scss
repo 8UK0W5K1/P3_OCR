@@ -1,0 +1,10 @@
+@mixin restaurant-bg-picture($restaurant) {
+  background: url('../../assets/restaurants/#{map-get($restaurants-bg-pictures, $restaurant)}')
+    center/cover;
+}
+
+@mixin breakpoints($device) {
+  @media screen and (min-width: map-get($breakpoints-values, $device)) {
+    @content;
+  }
+}
