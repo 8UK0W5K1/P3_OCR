@@ -47,9 +47,15 @@
 
   @include breakpoints(tablet) {
     font-size: 1.5rem;
+    h2 {
+      color: $primary-color;
+    }
   }
   @include breakpoints(desktop) {
     font-size: 1.7rem;
+    h2 {
+      color: $primary-color;
+    }
   }
 }
 
@@ -60,11 +66,17 @@
   }
 
   @include breakpoints(tablet) {
+    width: 50%;
+    margin: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
     h2 {
       font-size: 2rem;
+      text-decoration: underline;
+      text-underline-offset: 0.4rem;
+      text-decoration-color: $secondary-color;
+      text-decoration-style: double;
     }
   }
   .howto_cards {
@@ -137,6 +149,10 @@
     flex-direction: column;
     h2 {
       font-size: 2rem;
+      text-decoration: underline;
+      text-underline-offset: 0.4rem;
+      text-decoration-color: $secondary-color;
+      text-decoration-style: double;
     }
     .responsive_restaurants {
       display: flex;

@@ -143,10 +143,16 @@ a {
   .call_to_action {
     font-size: 1.5rem;
   }
+  .call_to_action h2 {
+    color: #9356dc;
+  }
 }
 @media screen and (min-width: 992px) {
   .call_to_action {
     font-size: 1.7rem;
+  }
+  .call_to_action h2 {
+    color: #9356dc;
   }
 }
 
@@ -155,12 +161,18 @@ a {
 }
 @media screen and (min-width: 768px) {
   .how_to {
+    width: 50%;
+    margin: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
   .how_to h2 {
     font-size: 2rem;
+    text-decoration: underline;
+    text-underline-offset: 0.4rem;
+    text-decoration-color: #ff79da;
+    text-decoration-style: double;
   }
 }
 .how_to .howto_cards {
@@ -229,6 +241,10 @@ a {
   }
   .restaurants h2 {
     font-size: 2rem;
+    text-decoration: underline;
+    text-underline-offset: 0.4rem;
+    text-decoration-color: #ff79da;
+    text-decoration-style: double;
   }
   .restaurants .responsive_restaurants {
     display: flex;
