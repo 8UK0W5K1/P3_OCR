@@ -166,6 +166,28 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
+    border-radius: 1.25rem;
+  }
+  .how_to h2 {
+    font-size: 2rem;
+    text-decoration: underline;
+    text-underline-offset: 0.4rem;
+    text-decoration-color: #ff79da;
+    text-decoration-style: double;
+  }
+  .how_to .howto_cards {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .how_to {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1.25rem;
   }
   .how_to h2 {
     font-size: 2rem;
