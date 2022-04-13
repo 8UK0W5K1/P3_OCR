@@ -6,3 +6,33 @@
     margin: auto;
   }
 }
+
+.pages_header {
+  @extend .homepage_header;
+  align-items: center;
+  padding-right: 62px;
+  a {
+    @extend .flex;
+    width: 62px;
+    height: 100%;
+    color: $dark-grey;
+    i {
+      margin: auto;
+      font-size: 1.3rem;
+    }
+  }
+  h1 {
+    width: 100%;
+    font-family: 'Shrikhand', cursive;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+
+    @include breakpoints(tablet) {
+      font-size: 2.5rem;
+    }
+    @include breakpoints(desktop) {
+      font-size: 3rem;
+    }
+  }
+}
