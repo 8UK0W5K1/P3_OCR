@@ -1,3 +1,9 @@
+.homepage_titles {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
 .user_location {
   height: 50px;
   background-color: darken($grey, 4%);
@@ -48,56 +54,130 @@
 }
 
 .how_to {
-  padding: 45px 20px 60px;
+  padding: 45px 20px 40px;
   h2 {
-    font-size: 1.5rem;
-    font-weight: 800;
-    margin-bottom: 25px;
+    @extend .homepage_titles;
   }
 
   .howto_cards {
     width: 100%;
     // responsive
   }
+}
 
-  .step_card {
-    width: 100%;
+.step_card {
+  width: 100%;
+  @extend .flex;
+  height: 72px;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &--number {
     @extend .flex;
-    height: 72px;
-    width: 100%;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
-
-    &--number {
-      @extend .flex;
-      justify-content: center;
-      align-items: center;
-      margin-right: -10px;
-      z-index: 21;
-      font-size: 0.8rem;
-      padding: 10px;
-      width: 20px;
-      height: 20px;
-      border-radius: 100%;
-      background-color: $primary-color;
-      color: $white;
-      font-weight: 600;
+    margin-right: -10px;
+    z-index: 2;
+    font-size: 0.8rem;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: $primary-color;
+    color: $white;
+    font-weight: 600;
+  }
+  &--content {
+    @extend .flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: $grey;
+    border-radius: 1.25rem;
+    font-weight: 600;
+    i {
+      width: 21px;
+      margin-left: -50px;
+      margin-right: 25px;
+      color: grey;
+      font-size: 1.2rem;
     }
-    &--content {
-      @extend .flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 100%;
-      background-color: $grey;
-      border-radius: 1.25rem;
-      font-weight: 600;
-
+    .mobile {
+      margin-left: -30px;
+    }
+    &:hover {
+      background-color: lighten($primary-color, 35%);
       i {
-        margin-left: -50px;
-        margin-right: 25px;
-        color: grey;
-        font-size: 1.2rem;
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.restaurants {
+  padding: 55px 20px 45px;
+  background-color: $grey;
+  h2 {
+    margin-bottom: 25px;
+    @extend .homepage_titles;
+  }
+  @include breakpoints(tablet) {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.restaurant_card {
+  border-radius: 1.25rem;
+  height: 250px;
+  margin-bottom: 16px;
+  // overflow: hidden;
+  background-color: $white;
+
+  &--image {
+    height: 70%;
+    position: relative;
+    img {
+      border-top-left-radius: 1.25rem;
+      border-top-right-radius: 1.25rem;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    .new_restaurant {
+      position: absolute;
+      right: 12px;
+      top: 12px;
+      background-color: $tertiary-color;
+      color: darken($tertiary-color, 35%);
+      padding: 6px 13px;
+      border-radius: 0.2rem;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+  }
+
+  &--description {
+    width: auto;
+    height: 30%;
+    &--infos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 15px 0 0 15px;
+      font-size: 1.2rem;
+
+      .restaurant_name {
+        font-weight: 700;
+        margin-bottom: 3px;
+      }
+      .restaurant_city {
+        font-weight: 300;
+        font-size: 1.1rem;
       }
     }
   }
