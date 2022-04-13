@@ -153,6 +153,16 @@ a {
 .how_to {
   padding: 45px 20px 40px;
 }
+@media screen and (min-width: 768px) {
+  .how_to {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .how_to h2 {
+    font-size: 2rem;
+  }
+}
 .how_to .howto_cards {
   width: 100%;
 }
@@ -216,6 +226,9 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
+  }
+  .restaurants h2 {
+    font-size: 2rem;
   }
   .restaurants .responsive_restaurants {
     display: flex;

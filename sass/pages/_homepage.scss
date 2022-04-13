@@ -59,6 +59,14 @@
     @extend .homepage_titles;
   }
 
+  @include breakpoints(tablet) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+      font-size: 2rem;
+    }
+  }
   .howto_cards {
     width: 100%;
     // responsive
@@ -127,6 +135,9 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    h2 {
+      font-size: 2rem;
+    }
     .responsive_restaurants {
       display: flex;
       flex-wrap: wrap;
