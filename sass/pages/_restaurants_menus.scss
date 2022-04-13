@@ -1,0 +1,77 @@
+.restaurant_card {
+  border-radius: 2.5rem 2.5rem 0 0;
+  background-color: $grey;
+  margin-top: -30px;
+  margin-bottom: 0;
+  padding: 30px 20px 40px 20px;
+  width: 100%;
+  height: auto;
+
+  .restaurant_card_name {
+    display: flex;
+    justify-content: space-between;
+    h2 {
+      font-family: 'Shrikhand';
+      font-size: 1.7rem;
+      font-weight: 500;
+    }
+
+    i {
+      padding: 25px 25px;
+    }
+  }
+  h3 {
+    margin-top: 25px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    &::after {
+      content: '';
+      display: block;
+      height: 2.5px;
+      width: 40px;
+      background-color: $tertiary-color;
+      margin-top: 4px;
+    }
+  }
+
+  .dish {
+    @extend .flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 1rem;
+    background-color: $white;
+    margin-top: 15px;
+    &--content {
+      width: 80%;
+      padding: 12px 0 12px 10px;
+      .dish_name {
+        margin-bottom: 5px;
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+      p {
+        margin: 0;
+        font-weight: 300;
+        font-size: 0.9rem;
+        text-overflow: ellipsis;
+      }
+    }
+
+    &--price {
+      @extend .flex;
+      align-items: flex-end;
+      color: $dark-grey;
+      font-weight: 700;
+      position: relative;
+      right: 15px;
+      bottom: 15px;
+    }
+  }
+
+  .btn {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+  }
+}
