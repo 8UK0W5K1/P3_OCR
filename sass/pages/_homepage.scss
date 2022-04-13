@@ -125,14 +125,48 @@
   }
   @include breakpoints(tablet) {
     display: flex;
-    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    .responsive_restaurants {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+}
+
+.responsive_restaurants {
+  @include breakpoints(tablet) {
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
+    .restaurant_cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+    }
   }
 }
 
 .restaurant_card {
+  @include breakpoints(tablet) {
+    width: 48%;
+  }
+  @include breakpoints(desktop) {
+    height: 350px;
+    &__image {
+      height: 75%;
+    }
+    &__description {
+      height: 25%;
+    }
+  }
+  box-sizing: border-box;
   border-radius: 1.25rem;
+  width: auto;
   height: 250px;
   margin-bottom: 16px;
   // overflow: hidden;
