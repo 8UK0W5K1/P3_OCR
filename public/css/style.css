@@ -47,7 +47,7 @@ li {
   list-style: none;
 }
 
-.flex, .homepage_header, .how_to .step_card--content, .how_to .step_card, .user_location {
+.flex, .homepage_header, .how_to .step_card--content, .how_to .step_card--number, .how_to .step_card, .user_location {
   display: flex;
 }
 
@@ -158,6 +158,20 @@ ul {
   align-items: center;
   margin-bottom: 20px;
 }
+.how_to .step_card--number {
+  justify-content: center;
+  align-items: center;
+  margin-right: -10px;
+  z-index: 21;
+  font-size: 0.8rem;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #9356dc;
+  color: #fff;
+  font-weight: 600;
+}
 .how_to .step_card--content {
   align-items: center;
   justify-content: center;
@@ -166,6 +180,12 @@ ul {
   background-color: #f5f5f5;
   border-radius: 1.25rem;
   font-weight: 600;
+}
+.how_to .step_card--content i {
+  margin-left: -50px;
+  margin-right: 25px;
+  color: grey;
+  font-size: 1.2rem;
 }
 
 .homepage_header {
