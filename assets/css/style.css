@@ -357,6 +357,22 @@ a {
   font-size: 1.1rem;
 }
 
+.restaurant_bg_image {
+  height: 250px;
+}
+.restaurant_bg_image.palette_du_gout {
+  background: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") center/cover;
+}
+.restaurant_bg_image.note_enchantee {
+  background: url("../images/restaurants/") center/cover;
+}
+.restaurant_bg_image.a_la_francaise {
+  background: url("../images/restaurants/") center/cover;
+}
+.restaurant_bg_image.delice_des_sens {
+  background: url("../images/restaurants/") center/cover;
+}
+
 .homepage_header, .pages_header {
   width: 100%;
   height: 63px;
@@ -384,6 +400,7 @@ a {
   text-align: center;
   font-weight: 500;
   font-size: 2rem;
+  color: black;
 }
 @media screen and (min-width: 768px) {
   .pages_header h1 {

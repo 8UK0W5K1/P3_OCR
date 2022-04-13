@@ -1,5 +1,5 @@
-@mixin restaurant-bg-picture($restaurant) {
-  background: url('../../assets/restaurants/#{map-get($restaurants-bg-pictures, $restaurant)}')
+@mixin restaurant_bg_image($restaurant) {
+  background: url('../images/restaurants/#{map-get($restaurants_bg_images, $restaurant)}')
     center/cover;
 }
 
@@ -8,3 +8,5 @@
     @content;
   }
 }
+
+// background: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") center/cover;

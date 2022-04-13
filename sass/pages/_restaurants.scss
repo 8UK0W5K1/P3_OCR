@@ -1,0 +1,15 @@
+.restaurant_bg_image {
+  height: 250px;
+  &.palette_du_gout {
+    @include restaurant_bg_image(palette_du_gout);
+  }
+  &.note_enchantee {
+    @include restaurant_bg_image(note_enchantee);
+  }
+  &.a_la_francaise {
+    @include restaurant_bg_image(a_la_francaise);
+  }
+  &.delice_des_sens {
+    @include restaurant_bg_image(delice_des_sens);
+  }
+}
