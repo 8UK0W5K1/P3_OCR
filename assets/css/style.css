@@ -47,7 +47,7 @@ li {
   list-style: none;
 }
 
-.flex, .pages_header a, .homepage_header, .pages_header, .restaurant_card .dish--price, .restaurant_card .dish, .step_card--content, .step_card--number, .step_card, .user_location {
+.flex, .pages_header a, .homepage_header, .pages_header, .restaurant_menu_card .dish--price, .restaurant_menu_card .dish, .step_card--content, .step_card--number, .step_card, .user_location {
   display: flex;
 }
 
@@ -373,7 +373,7 @@ a {
   background: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg") center/cover;
 }
 
-.restaurant_card {
+.restaurant_menu_card {
   border-radius: 2.5rem 2.5rem 0 0;
   background-color: #f5f5f5;
   margin-top: -30px;
@@ -382,25 +382,25 @@ a {
   width: 100%;
   height: auto;
 }
-.restaurant_card .restaurant_card_name {
+.restaurant_menu_card .restaurant_menu_card_name {
   display: flex;
   justify-content: space-between;
 }
-.restaurant_card .restaurant_card_name h2 {
+.restaurant_menu_card .restaurant_menu_card_name h2 {
   font-family: "Shrikhand";
   font-size: 1.7rem;
   font-weight: 500;
 }
-.restaurant_card .restaurant_card_name i {
+.restaurant_menu_card .restaurant_menu_card_name i {
   padding: 25px 25px;
 }
-.restaurant_card h3 {
+.restaurant_menu_card h3 {
   margin-top: 25px;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 300;
 }
-.restaurant_card h3::after {
+.restaurant_menu_card h3::after {
   content: "";
   display: block;
   height: 2.5px;
@@ -408,29 +408,29 @@ a {
   background-color: #99e2d0;
   margin-top: 4px;
 }
-.restaurant_card .dish {
+.restaurant_menu_card .dish {
   justify-content: space-between;
   width: 100%;
   border-radius: 1rem;
   background-color: #fff;
   margin-top: 15px;
 }
-.restaurant_card .dish--content {
+.restaurant_menu_card .dish--content {
   width: 80%;
   padding: 12px 0 12px 10px;
 }
-.restaurant_card .dish--content .dish_name {
+.restaurant_menu_card .dish--content .dish_name {
   margin-bottom: 5px;
   font-size: 1.1rem;
   font-weight: 600;
 }
-.restaurant_card .dish--content p {
+.restaurant_menu_card .dish--content p {
   margin: 0;
   font-weight: 300;
   font-size: 0.9rem;
   text-overflow: ellipsis;
 }
-.restaurant_card .dish--price {
+.restaurant_menu_card .dish--price {
   align-items: flex-end;
   color: #363636;
   font-weight: 700;
@@ -438,7 +438,7 @@ a {
   right: 15px;
   bottom: 15px;
 }
-.restaurant_card .btn {
+.restaurant_menu_card .btn {
   display: block;
   margin: auto;
   margin-top: 50px;

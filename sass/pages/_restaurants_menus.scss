@@ -1,4 +1,4 @@
-.restaurant_card {
+.restaurant_menu_card {
   border-radius: 2.5rem 2.5rem 0 0;
   background-color: $grey;
   margin-top: -30px;
@@ -7,7 +7,7 @@
   width: 100%;
   height: auto;
 
-  .restaurant_card_name {
+  .restaurant_menu_card_name {
     display: flex;
     justify-content: space-between;
     h2 {
