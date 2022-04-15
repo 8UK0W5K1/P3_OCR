@@ -366,7 +366,8 @@ a {
   .restaurants .responsive_restaurants {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin: auto;
     width: 100%;
   }
 }
