@@ -1,0 +1,49 @@
+.loading_animation {
+  display: flex;
+  position: fixed;
+  z-index: 99;
+  transform: scale(0);
+  background-color: rgba($grey, 1);
+  animation: load-background 2.75s 100ms ease-in-out backwards;
+  // animation: name duration timing-function delay iteration-count direction fill-mode;
+  i {
+    transform: scale(0);
+    font-size: 8rem;
+    color: $primary-color;
+    margin: auto;
+    animation: load-spinner 2.75s 100ms linear backwards;
+  }
+}
+
+@keyframes load-spinner {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+    color: $primary-color;
+  }
+  25% {
+    color: $tertiary-color;
+  }
+  50% {
+    opacity: 0.75;
+    color: $primary-color;
+  }
+  75% {
+    opacity: 0.75;
+    color: $secondary-color;
+  }
+  100% {
+    color: $tertiary-color;
+    transform: rotate(3turn);
+    opacity: 0;
+  }
+}
+
+@keyframes load-background {
+  0%,
+  100% {
+    transform: scale(1);
+    height: 100vh;
+    width: 100vw;
+  }
+}

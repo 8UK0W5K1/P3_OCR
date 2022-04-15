@@ -60,6 +60,52 @@ a {
   color: inherit;
 }
 
+.loading_animation {
+  display: flex;
+  position: fixed;
+  z-index: 99;
+  transform: scale(0);
+  background-color: whitesmoke;
+  animation: load-background 2.75s 100ms ease-in-out backwards;
+}
+.loading_animation i {
+  transform: scale(0);
+  font-size: 8rem;
+  color: #9356dc;
+  margin: auto;
+  animation: load-spinner 2.75s 100ms linear backwards;
+}
+
+@keyframes load-spinner {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+    color: #9356dc;
+  }
+  25% {
+    color: #99e2d0;
+  }
+  50% {
+    opacity: 0.75;
+    color: #9356dc;
+  }
+  75% {
+    opacity: 0.75;
+    color: #ff79da;
+  }
+  100% {
+    color: #99e2d0;
+    transform: rotate(3turn);
+    opacity: 0;
+  }
+}
+@keyframes load-background {
+  0%, 100% {
+    transform: scale(1);
+    height: 100vh;
+    width: 100vw;
+  }
+}
 .btn {
   box-sizing: border-box;
   display: inline-block;
