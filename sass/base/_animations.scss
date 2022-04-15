@@ -3,11 +3,15 @@
   position: fixed;
   z-index: 99;
   transform: scale(0);
-  background-color: rgba($grey, 1);
+  background-color: rgba($dark-grey, 0.97);
+  backdrop-filter: blur(25px);
   animation: load-background 2.75s 100ms ease-in-out backwards;
   // animation: name duration timing-function delay iteration-count direction fill-mode;
   i {
     transform: scale(0);
+    background-color: rgba($grey, 1);
+    padding: 50px;
+    border-radius: 100%;
     font-size: 8rem;
     color: $primary-color;
     margin: auto;
@@ -34,7 +38,7 @@
   }
   100% {
     color: $tertiary-color;
-    transform: rotate(3turn);
+    transform: rotate(2turn);
     opacity: 0;
   }
 }

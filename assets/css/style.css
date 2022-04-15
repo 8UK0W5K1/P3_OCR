@@ -65,11 +65,15 @@ a {
   position: fixed;
   z-index: 99;
   transform: scale(0);
-  background-color: whitesmoke;
+  background-color: rgba(54, 54, 54, 0.97);
+  backdrop-filter: blur(25px);
   animation: load-background 2.75s 100ms ease-in-out backwards;
 }
 .loading_animation i {
   transform: scale(0);
+  background-color: whitesmoke;
+  padding: 50px;
+  border-radius: 100%;
   font-size: 8rem;
   color: #9356dc;
   margin: auto;
@@ -95,7 +99,7 @@ a {
   }
   100% {
     color: #99e2d0;
-    transform: rotate(3turn);
+    transform: rotate(2turn);
     opacity: 0;
   }
 }
