@@ -640,6 +640,15 @@ a {
 .restaurant_menu_card .dish:hover .select_animation--icon {
   transform: rotate(360deg);
 }
+.restaurant_menu_card .dish:hover .dish--content {
+  width: 50%;
+}
+.restaurant_menu_card .dish:hover .dish--content .dish_name,
+.restaurant_menu_card .dish:hover .dish--content p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
 .restaurant_menu_card .dish:hover .dish--price {
   transform: translateX(-70px);
 }

@@ -151,6 +151,15 @@
         transform: rotate(360deg);
       }
     }
+    &:hover .dish--content {
+      width: 50%;
+      .dish_name,
+      p {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    }
     &:hover .dish--price {
       transform: translateX(-70px);
     }
