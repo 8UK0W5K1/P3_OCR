@@ -140,6 +140,7 @@
     background-color: $grey;
     border-radius: 1.25rem;
     font-weight: 600;
+    @include shadow($dark-grey);
     i {
       width: 21px;
       margin-left: -50px;
@@ -202,6 +203,7 @@
 }
 
 .restaurant_card {
+  @include shadow($dark-grey);
   @include breakpoints(tablet) {
     width: 48%;
   }

@@ -324,6 +324,7 @@ a {
   background-color: #f5f5f5;
   border-radius: 1.25rem;
   font-weight: 600;
+  box-shadow: 0 4px 10px #363636;
 }
 .step_card--content i {
   width: 21px;
@@ -386,6 +387,7 @@ a {
 }
 
 .restaurant_card {
+  box-shadow: 0 4px 10px #363636;
   box-sizing: border-box;
   border-radius: 1.25rem;
   width: auto;
