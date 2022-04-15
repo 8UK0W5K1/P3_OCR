@@ -246,13 +246,15 @@
   }
 
   &--description {
-    width: auto;
+    display: flex;
+    width: 90%;
     height: 30%;
     &--infos {
       display: flex;
+      flex: 1;
       flex-direction: column;
       justify-content: center;
-      padding: 15px 0 0 15px;
+      padding: 10px 0 10px 15px;
       font-size: 1.2rem;
 
       .restaurant_name {
@@ -264,5 +266,9 @@
         font-size: 1.1rem;
       }
     }
+  }
+  .restaurant_like {
+    padding: 15px 0 0 15px;
+    margin: auto;
   }
 }
