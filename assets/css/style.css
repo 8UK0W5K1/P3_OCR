@@ -508,12 +508,77 @@ a {
   background-color: #99e2d0;
   margin-top: 4px;
 }
+.restaurant_menu_card .entrance_animation {
+  animation: loading-entrance 1.5s 100ms forwards;
+}
+.restaurant_menu_card .dishes_animation {
+  animation: loading-dishes 1.5s 1s forwards;
+}
+.restaurant_menu_card .dessert_animation {
+  animation: loading-dessert 1.5s 2s forwards;
+}
+@keyframes loading-entrance {
+  0% {
+    transform: translateY(20px);
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes loading-dishes {
+  0% {
+    transform: translateY(20px);
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes loading-dessert {
+  0% {
+    transform: translateY(20px);
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
 .restaurant_menu_card .dish {
   justify-content: space-between;
   width: 100%;
   border-radius: 1rem;
   background-color: #fff;
   margin-top: 15px;
+  opacity: 0;
+  box-shadow: 0 4px 10px #c2c2c2;
 }
 .restaurant_menu_card .dish--content {
   width: 80%;
