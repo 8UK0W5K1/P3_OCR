@@ -9,4 +9,6 @@
   }
 }
 
-// background: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg") center/cover;
+@mixin shadow($color: darken($grey, 20%)) {
+  box-shadow: 0 4px 10px $color;
+}

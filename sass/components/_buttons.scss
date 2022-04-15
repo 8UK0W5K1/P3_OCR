@@ -9,6 +9,7 @@
   font-size: 1rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
+  @include shadow;
   background: linear-gradient(
     180deg,
     $secondary-color,
@@ -27,6 +28,7 @@
       lighten($secondary-color, 8%),
       lighten($primary-color, 8%)
     );
+    @include shadow($dark-grey);
   }
   @include breakpoints(tablet) {
     transform: scale(1.1);

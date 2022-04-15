@@ -121,6 +121,7 @@ a {
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  box-shadow: 0 4px 10px #c2c2c2;
   background: linear-gradient(180deg, #ff79da, #a16be0);
   cursor: pointer;
 }
@@ -132,6 +133,7 @@ a {
 }
 .btn:hover {
   background: linear-gradient(180deg, #ffa2e5, #a978e3);
+  box-shadow: 0 4px 10px #363636;
 }
 @media screen and (min-width: 768px) {
   .btn {
