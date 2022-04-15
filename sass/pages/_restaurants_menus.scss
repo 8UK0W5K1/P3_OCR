@@ -9,8 +9,8 @@
 
   @include breakpoints(desktop) {
     width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: -30px auto 80px auto;
+    border-radius: 2.5rem;
   }
 
   .restaurant_menu_card_name {
@@ -134,9 +134,25 @@
       align-items: flex-end;
       color: $dark-grey;
       font-weight: 700;
-      position: relative;
+      position: absolute;
       right: 15px;
       bottom: 15px;
+      transform-origin: right;
+      transition: transform 300ms 100ms linear;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:hover .select_animation {
+      transform: scaleX(1);
+      &--icon {
+        transform: rotate(360deg);
+      }
+    }
+    &:hover .dish--price {
+      transform: translateX(-70px);
     }
   }
 
