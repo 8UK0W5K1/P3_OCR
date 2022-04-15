@@ -484,6 +484,13 @@ a {
   width: 100%;
   height: auto;
 }
+@media screen and (min-width: 992px) {
+  .restaurant_menu_card {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .restaurant_menu_card .restaurant_menu_card_name {
   display: flex;
   justify-content: space-between;
@@ -580,7 +587,6 @@ a {
   background-color: #fff;
   margin-top: 15px;
   opacity: 0;
-  box-shadow: 0 4px 10px #c2c2c2;
 }
 .restaurant_menu_card .dish--content {
   width: 80%;

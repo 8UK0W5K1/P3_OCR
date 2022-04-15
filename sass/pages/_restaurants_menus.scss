@@ -7,6 +7,12 @@
   width: 100%;
   height: auto;
 
+  @include breakpoints(desktop) {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .restaurant_menu_card_name {
     display: flex;
     justify-content: space-between;
@@ -106,7 +112,6 @@
     background-color: $white;
     margin-top: 15px;
     opacity: 0;
-    @include shadow;
 
     &--content {
       width: 80%;
