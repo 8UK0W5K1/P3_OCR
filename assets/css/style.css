@@ -382,6 +382,9 @@ a {
   align-items: center;
   margin-bottom: 20px;
 }
+.step_card:hover {
+  cursor: pointer;
+}
 .step_card--number {
   justify-content: center;
   align-items: center;

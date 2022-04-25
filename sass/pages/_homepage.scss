@@ -116,6 +116,9 @@
   align-items: center;
   margin-bottom: 20px;
 
+  &:hover {
+    cursor: pointer;
+  }
   &--number {
     @extend .flex;
     justify-content: center;
