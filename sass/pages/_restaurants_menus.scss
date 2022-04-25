@@ -116,6 +116,9 @@
     &--content {
       width: 80%;
       padding: 12px 0 12px 10px;
+      transform: scaleX(1);
+      transform-origin: left;
+      transition: width 300ms 100ms linear;
       .dish_name {
         margin-bottom: 5px;
         font-size: 1.1rem;
@@ -126,6 +129,8 @@
         font-weight: 300;
         font-size: 0.9rem;
         text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
       }
     }
 
@@ -152,6 +157,7 @@
       }
     }
     &:hover .dish--content {
+      transition: 0.3s;
       width: 50%;
       .dish_name,
       p {

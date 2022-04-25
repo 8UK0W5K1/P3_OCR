@@ -125,6 +125,27 @@ a {
   opacity: 1;
   transform: scale(1);
 }
+.like__btn:hover .heart--filled.dos > path {
+  cursor: pointer;
+  stroke: url(#gradient2);
+  fill: url(#gradient2);
+  opacity: 1;
+  transform: scale(1);
+}
+.like__btn:hover .heart--filled.tres > path {
+  cursor: pointer;
+  stroke: url(#gradient3);
+  fill: url(#gradient3);
+  opacity: 1;
+  transform: scale(1);
+}
+.like__btn:hover .heart--filled.dos.quatro > path {
+  cursor: pointer;
+  stroke: url(#gradient4);
+  fill: url(#gradient4);
+  opacity: 1;
+  transform: scale(1);
+}
 .like__btn .heart {
   position: absolute;
   top: 0;
@@ -146,6 +167,48 @@ a {
   stroke-width: 1;
   stroke: black;
   fill: url(#gradient1);
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.6s linear;
+  transform-origin: 12px 20px;
+}
+.like__btn .heart--filled .heart--filled.dos {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.like__btn .heart--filled .heart--filled.dos > path {
+  stroke-width: 1;
+  stroke: black;
+  fill: url(#gradient2);
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.6s linear;
+  transform-origin: 12px 20px;
+}
+.like__btn .heart--filled .heart--filled.tres {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.like__btn .heart--filled .heart--filled.tres > path {
+  stroke-width: 1;
+  stroke: black;
+  fill: url(#gradient3);
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.6s linear;
+  transform-origin: 12px 20px;
+}
+.like__btn .heart--filled .heart--filled.quatro {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.like__btn .heart--filled .heart--filled.quatro > path {
+  stroke-width: 1;
+  stroke: black;
+  fill: url(#gradient4);
   opacity: 0;
   transform: scale(0);
   transition: all 0.6s linear;
@@ -609,6 +672,9 @@ a {
 .restaurant_menu_card .dish--content {
   width: 80%;
   padding: 12px 0 12px 10px;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: width 300ms 100ms linear;
 }
 .restaurant_menu_card .dish--content .dish_name {
   margin-bottom: 5px;
@@ -620,6 +686,8 @@ a {
   font-weight: 300;
   font-size: 0.9rem;
   text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .restaurant_menu_card .dish--price {
   align-items: flex-end;
@@ -641,6 +709,7 @@ a {
   transform: rotate(360deg);
 }
 .restaurant_menu_card .dish:hover .dish--content {
+  transition: 0.3s;
   width: 50%;
 }
 .restaurant_menu_card .dish:hover .dish--content .dish_name,

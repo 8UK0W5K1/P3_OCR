@@ -13,6 +13,27 @@
     opacity: 1;
     transform: scale(1);
   }
+  &:hover .heart--filled.dos > path {
+    cursor: pointer;
+    stroke: url(#gradient2);
+    fill: url(#gradient2);
+    opacity: 1;
+    transform: scale(1);
+  }
+  &:hover .heart--filled.tres > path {
+    cursor: pointer;
+    stroke: url(#gradient3);
+    fill: url(#gradient3);
+    opacity: 1;
+    transform: scale(1);
+  }
+  &:hover .heart--filled.dos.quatro > path {
+    cursor: pointer;
+    stroke: url(#gradient4);
+    fill: url(#gradient4);
+    opacity: 1;
+    transform: scale(1);
+  }
 
   .heart {
     position: absolute;
@@ -39,6 +60,48 @@
       transform: scale(0);
       transition: all 0.6s linear;
       transform-origin: 12px 20px;
+    }
+    .heart--filled.dos {
+      position: absolute;
+      top: 0;
+      left: 0;
+      & > path {
+        stroke-width: 1;
+        stroke: black;
+        fill: url(#gradient2);
+        opacity: 0;
+        transform: scale(0);
+        transition: all 0.6s linear;
+        transform-origin: 12px 20px;
+      }
+    }
+    .heart--filled.tres {
+      position: absolute;
+      top: 0;
+      left: 0;
+      & > path {
+        stroke-width: 1;
+        stroke: black;
+        fill: url(#gradient3);
+        opacity: 0;
+        transform: scale(0);
+        transition: all 0.6s linear;
+        transform-origin: 12px 20px;
+      }
+    }
+    .heart--filled.quatro {
+      position: absolute;
+      top: 0;
+      left: 0;
+      & > path {
+        stroke-width: 1;
+        stroke: black;
+        fill: url(#gradient4);
+        opacity: 0;
+        transform: scale(0);
+        transition: all 0.6s linear;
+        transform-origin: 12px 20px;
+      }
     }
   }
 }
